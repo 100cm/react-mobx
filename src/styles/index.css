@@ -1,0 +1,55 @@
+/* import antd style. you can remove next line if you use babel-plugin-antd */
+@import '../../node_modules/antd/dist/antd.css';
+
+/* we need import layout here,it override some antd styles */
+@import './layout.css';
+
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+.react-grid-item > .react-resizable-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    background: url('./imgs/grid-conner.png');
+    background-position: bottom right;
+    padding: 0 3px 3px 0;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    box-sizing: border-box;
+    cursor: se-resize;
+}
+
+.react-grid-item .text {
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cplor:#888888;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 24px;
+}
+.react-grid-item:not(.react-grid-placeholder) {
+    border: 1px dashed #e9e9e9;
+    border-radius: 6px;
+    background-color: #fafafa;
+    text-align: center;
+}
+.react-grid-layout {
+    background: #e9e9e9;
+    position: relative;
+    transition: height 200ms ease;
+}
+
